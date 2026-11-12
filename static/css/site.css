@@ -330,3 +330,18 @@ p{margin:0 0 1em;max-width:62ch}
 .hs__canvas[hidden]{display:none}
 .hs__canvas{transition:filter .25s}.hs__canvas.is-blur{filter:blur(14px) saturate(.85)}
 .hs.is-live .hs__hud{transition:opacity .4s}.hs.is-live:not(.is-building) .hs__hud{opacity:0}
+
+/* Discreet credit on demo-still (concept) photos only. */
+.photo[data-src="concept"]{position:relative}
+.photo[data-src="concept"]::after{
+  content:"Concept image";
+  position:absolute;right:8px;bottom:8px;z-index:2;
+  font:500 9px/1 var(--sans,sans-serif);
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;background:rgba(20,24,32,.48);
+  padding:4px 7px;border-radius:2px;pointer-events:none;
+}
+@media (max-width:699px){
+  .svc-item .photo[data-src="concept"]::after,.photo--sm[data-src="concept"]::after{font-size:8px;padding:3px 5px}
+}
+.row__img .photo[data-src="concept"]::after{content:none}
