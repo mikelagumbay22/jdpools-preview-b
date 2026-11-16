@@ -48,8 +48,8 @@
 <section class="contact wrap" id="estimate" aria-labelledby="form-h">
   <div class="contact__form">
     <h2 id="form-h" class="h2">Tell Us About Your Project</h2>
-    <form name="project-inquiry" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" class="form">
-      <input type="hidden" name="form-name" value="project-inquiry">
+    <form name="project-inquiry" method="POST" action="https://jdpools-inquiry.jmlagumbay422.workers.dev/" class="form" data-inquiry>
+      <input type="hidden" name="site" value="Draft B"><input type="hidden" name="t" value="">
       <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="field"><label for="f-name">Full Name</label><input id="f-name" name="name" autocomplete="name" required></div>
       <div class="field-row">
@@ -80,6 +80,7 @@
       </fieldset>
       <p><button class="btn btn--primary" type="submit">Submit Project Inquiry</button></p>
     </form>
+    <script src="static/js/inquiry.js?v=202611152354" defer></script>
   </div>
   <aside class="contact__direct" aria-labelledby="direct-h">
     <h2 id="direct-h" class="h3">Prefer to Contact Us Directly?</h2>
